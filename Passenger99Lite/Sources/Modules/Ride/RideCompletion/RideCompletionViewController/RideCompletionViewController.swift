@@ -65,3 +65,10 @@ extension RideCompletionViewController: RideCompletionViewLayoutDelegate {
         
     }
 }
+
+
+extension RideCompletionViewController: RideCompletionViewType {
+    func show(viewModel: RideCompletionViewModel) {
+        <#code#>
+    }
+}

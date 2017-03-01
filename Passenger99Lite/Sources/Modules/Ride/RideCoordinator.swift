@@ -26,6 +26,7 @@ extension RideCoordinator: RideProgressViewControllerDelegate {
         let repository = RideRepository()
         let presenter = RideCompletionPresenter(repository: repository)
         let rideCompletionViewController = RideCompletionViewController(presenter: presenter)
+        presenter
         rideCompletionViewController.delegate = self
         rideProgressController.present(rideCompletionViewController, animated: true, completion: nil)
     }
