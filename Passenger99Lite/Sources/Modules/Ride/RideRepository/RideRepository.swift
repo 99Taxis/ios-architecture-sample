@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-class RideRepository: RideProgressRepositoryType {
+class RideRepository: RideRepositoryType {
     
     lazy var rideObservable: Observable<Float> = {
         return Observable<Float>.create { observer in

@@ -5,11 +5,11 @@ protocol RideProgressViewType: class {
     func show(viewModel: RideProgressViewModel)
 }
 
-class RidePresenter: RideProgressPresenterType {
+class RideProgressPresenter: RideProgressPresenterType {
     
     weak var view: RideProgressViewType?
     
-    fileprivate let repository: RideProgressRepositoryType
+    fileprivate let repository: RideRepositoryType
     fileprivate let disposeBag = DisposeBag()
     fileprivate var viewModel = RideProgressViewModel(progress: 0) {
         didSet(oldValue) {
@@ -19,7 +19,7 @@ class RidePresenter: RideProgressPresenterType {
         }
     }
     
-    init(repository: RideProgressRepositoryType) {
+    init(repository: RideRepositoryType) {
         self.repository = repository
     }
     
@@ -29,7 +29,7 @@ class RidePresenter: RideProgressPresenterType {
     }
 }
 
-extension RidePresenter {
+extension RideProgressPresenter {
     
     fileprivate func listenToRideUpdates() {
         self.repository.rideObservable

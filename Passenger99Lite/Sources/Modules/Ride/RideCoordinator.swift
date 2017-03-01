@@ -11,7 +11,7 @@ final class RideCoordinator {
     
     func start() {
         let repository = RideRepository()
-        let presenter = RidePresenter(repository: repository)
+        let presenter = RideProgressPresenter(repository: repository)
         let rideProgressViewController = RideProgressViewController(presenter: presenter)
         presenter.view = rideProgressViewController
         
