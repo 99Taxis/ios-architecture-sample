@@ -32,4 +32,15 @@ class RideRepository: RideRepositoryType {
             return cancel
         }
     }()
+    
+    func requestTipValues() -> Observable<[Tip]> {
+        let tips = [
+            Tip(value: 0.0, description: "😡"),
+            Tip(value: 2.0, description: "🙂"),
+            Tip(value: 5.0, description: "😎"),
+            Tip(value: 10.0, description: "🤑")
+        ]
+        
+        return Observable<[Tip]>.just(tips)
+    }
 }
