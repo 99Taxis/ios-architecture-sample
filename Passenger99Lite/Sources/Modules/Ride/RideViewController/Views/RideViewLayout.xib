@@ -14,8 +14,25 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RideViewLayout" customModule="Passenger99Lite" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Uhe-UE-khh">
+                    <rect key="frame" x="20" y="332.5" width="335" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="BTZ-XM-Q9s"/>
+                    </constraints>
+                </progressView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="43" y="50"/>
+            <constraints>
+                <constraint firstItem="Uhe-UE-khh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="6Vg-5U-P4N"/>
+                <constraint firstAttribute="trailing" secondItem="Uhe-UE-khh" secondAttribute="trailing" constant="20" id="P52-3h-lxM"/>
+                <constraint firstItem="Uhe-UE-khh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oXO-XI-WVI"/>
+                <constraint firstItem="Uhe-UE-khh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uFb-mR-Hnh"/>
+            </constraints>
+            <connections>
+                <outlet property="progressView" destination="Uhe-UE-khh" id="acy-jJ-Zew"/>
+            </connections>
+            <point key="canvasLocation" x="42.5" y="49.5"/>
         </view>
     </objects>
 </document>

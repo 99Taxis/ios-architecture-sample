@@ -3,15 +3,17 @@ import UIKit
 
 final class RideCoordinator {
     
-    unowned let window: UIWindow
-    var navigationController: UINavigationController!
+    private unowned let window: UIWindow
+    private var navigationController: UINavigationController!
     
     init(window: UIWindow) {
         self.window = window
     }
     
     func start() {
-        let rideViewController = RideViewController()
+        let repository = RideRepository()
+        let presenter = RidePresenter(repository: repository)
+        let rideViewController = RideViewController(presenter: presenter)
         self.navigationController = UINavigationController(rootViewController: rideViewController)
         self.window.rootViewController = self.navigationController
         self.window.makeKeyAndVisible()
