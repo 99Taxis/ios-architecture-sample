@@ -40,3 +40,12 @@ extension RideViewController {
         }
     }
 }
+
+// MARK: - ride view
+
+extension RideViewController: RideViewType {
+    
+    func show(viewModel: RideViewModel) {
+        self.rideView.show(viewModel: viewModel)
+    }
+}

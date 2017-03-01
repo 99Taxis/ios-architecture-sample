@@ -6,6 +6,7 @@ target 'Passenger99Lite' do
   use_frameworks!
 
   pod 'SnapKit'
+  pod 'RxSwift'
 
   target 'Passenger99LiteTests' do
     inherit! :search_paths
