@@ -5,7 +5,7 @@ target 'Passenger99Lite' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Passenger99Lite
+  pod 'SnapKit'
 
   target 'Passenger99LiteTests' do
     inherit! :search_paths

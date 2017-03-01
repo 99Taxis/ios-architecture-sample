@@ -1,5 +1,6 @@
 
 import UIKit
+import SnapKit
 
 final class RideViewController: UIViewController {
 
@@ -11,4 +12,3 @@ final class RideViewController: UIViewController {
         self.view.backgroundColor = .blue
     }
 }
-
