@@ -1,5 +1,5 @@
 import Foundation
 
-protocol RidePresenterType: Presenter {
+protocol RideProgressPresenterType: Presenter {
     
 }

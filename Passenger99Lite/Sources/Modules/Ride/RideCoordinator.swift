@@ -12,10 +12,10 @@ final class RideCoordinator {
     func start() {
         let repository = RideRepository()
         let presenter = RidePresenter(repository: repository)
-        let rideViewController = RideViewController(presenter: presenter)
-        presenter.view = rideViewController
+        let rideProgressViewController = RideProgressViewController(presenter: presenter)
+        presenter.view = rideProgressViewController
         
-        self.window.rootViewController = rideViewController
+        self.window.rootViewController = rideProgressViewController
         self.window.makeKeyAndVisible()
     }
 }

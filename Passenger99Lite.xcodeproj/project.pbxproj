@@ -20,13 +20,13 @@
 		6ECC0DC71E673B420015FF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC0DBB1E673B420015FF5D /* Assets.xcassets */; };
 		6ECC0DC81E673B420015FF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC0DBC1E673B420015FF5D /* LaunchScreen.storyboard */; };
 		6ECC0DC91E673B420015FF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC0DBE1E673B420015FF5D /* Main.storyboard */; };
-		6ECC0DCC1E673B420015FF5D /* RideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DC61E673B420015FF5D /* RideViewController.swift */; };
+		6ECC0DCC1E673B420015FF5D /* RideProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DC61E673B420015FF5D /* RideProgressViewController.swift */; };
 		6ECC0DCF1E673B650015FF5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DCE1E673B650015FF5D /* AppDelegate.swift */; };
 		6ECC0DD11E673C150015FF5D /* RideCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DD01E673C150015FF5D /* RideCoordinator.swift */; };
 		6ECC0DD81E6746FA0015FF5D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DD71E6746FA0015FF5D /* NibLoadable.swift */; };
-		6ECC0DDF1E6756E30015FF5D /* RideViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DDC1E6756E30015FF5D /* RideViewLayout.swift */; };
-		6ECC0DE01E6756E30015FF5D /* RideViewLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC0DDD1E6756E30015FF5D /* RideViewLayout.xib */; };
-		6ECC0DE11E6756E30015FF5D /* RideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DDE1E6756E30015FF5D /* RideViewModel.swift */; };
+		6ECC0DDF1E6756E30015FF5D /* RideProgressViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DDC1E6756E30015FF5D /* RideProgressViewLayout.swift */; };
+		6ECC0DE01E6756E30015FF5D /* RideProgressViewLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC0DDD1E6756E30015FF5D /* RideProgressViewLayout.xib */; };
+		6ECC0DE11E6756E30015FF5D /* RideProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DDE1E6756E30015FF5D /* RideProgressViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,13 +66,13 @@
 		6ECC0DBD1E673B420015FF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ECC0DBF1E673B420015FF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6ECC0DC01E673B420015FF5D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6ECC0DC61E673B420015FF5D /* RideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideViewController.swift; sourceTree = "<group>"; };
+		6ECC0DC61E673B420015FF5D /* RideProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideProgressViewController.swift; sourceTree = "<group>"; };
 		6ECC0DCE1E673B650015FF5D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ECC0DD01E673C150015FF5D /* RideCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCoordinator.swift; sourceTree = "<group>"; };
 		6ECC0DD71E6746FA0015FF5D /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
-		6ECC0DDC1E6756E30015FF5D /* RideViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideViewLayout.swift; sourceTree = "<group>"; };
-		6ECC0DDD1E6756E30015FF5D /* RideViewLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RideViewLayout.xib; sourceTree = "<group>"; };
-		6ECC0DDE1E6756E30015FF5D /* RideViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideViewModel.swift; sourceTree = "<group>"; };
+		6ECC0DDC1E6756E30015FF5D /* RideProgressViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideProgressViewLayout.swift; sourceTree = "<group>"; };
+		6ECC0DDD1E6756E30015FF5D /* RideProgressViewLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RideProgressViewLayout.xib; sourceTree = "<group>"; };
+		6ECC0DDE1E6756E30015FF5D /* RideProgressViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideProgressViewModel.swift; sourceTree = "<group>"; };
 		73E81B242B979391801BA667 /* Pods-Passenger99LiteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger99LiteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passenger99LiteTests/Pods-Passenger99LiteTests.release.xcconfig"; sourceTree = "<group>"; };
 		7DFF7DDF1648609FD184B748 /* Pods-Passenger99LiteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger99LiteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passenger99LiteUITests/Pods-Passenger99LiteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ACA44C32080AC6FEB11B33CC /* Pods-Passenger99Lite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger99Lite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passenger99Lite/Pods-Passenger99Lite.release.xcconfig"; sourceTree = "<group>"; };
@@ -234,17 +234,18 @@
 				6ECC0DD01E673C150015FF5D /* RideCoordinator.swift */,
 				6E62FA341E6761240023F87E /* RidePresenter */,
 				6E62FA371E6761240023F87E /* RideRepository */,
-				6ECC0DC51E673B420015FF5D /* RideViewController */,
+				6ECC0DC51E673B420015FF5D /* RideProgressViewController */,
 			);
 			path = Ride;
 			sourceTree = "<group>";
 		};
-		6ECC0DC51E673B420015FF5D /* RideViewController */ = {
+		6ECC0DC51E673B420015FF5D /* RideProgressViewController */ = {
 			isa = PBXGroup;
 			children = (
 				6ECC0DDB1E6756E30015FF5D /* Views */,
-				6ECC0DC61E673B420015FF5D /* RideViewController.swift */,
+				6ECC0DC61E673B420015FF5D /* RideProgressViewController.swift */,
 			);
+			name = RideProgressViewController;
 			path = RideViewController;
 			sourceTree = "<group>";
 		};
@@ -268,9 +269,9 @@
 		6ECC0DDB1E6756E30015FF5D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6ECC0DDD1E6756E30015FF5D /* RideViewLayout.xib */,
-				6ECC0DDC1E6756E30015FF5D /* RideViewLayout.swift */,
-				6ECC0DDE1E6756E30015FF5D /* RideViewModel.swift */,
+				6ECC0DDD1E6756E30015FF5D /* RideProgressViewLayout.xib */,
+				6ECC0DDC1E6756E30015FF5D /* RideProgressViewLayout.swift */,
+				6ECC0DDE1E6756E30015FF5D /* RideProgressViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -394,7 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ECC0DE01E6756E30015FF5D /* RideViewLayout.xib in Resources */,
+				6ECC0DE01E6756E30015FF5D /* RideProgressViewLayout.xib in Resources */,
 				6ECC0DC91E673B420015FF5D /* Main.storyboard in Resources */,
 				6ECC0DC71E673B420015FF5D /* Assets.xcassets in Resources */,
 				6ECC0DC81E673B420015FF5D /* LaunchScreen.storyboard in Resources */,
@@ -564,9 +565,9 @@
 				6E62FA3D1E6761240023F87E /* RideRepositoryType.swift in Sources */,
 				6ECC0DCF1E673B650015FF5D /* AppDelegate.swift in Sources */,
 				6E62FA3F1E67614F0023F87E /* Presenter.swift in Sources */,
-				6ECC0DDF1E6756E30015FF5D /* RideViewLayout.swift in Sources */,
-				6ECC0DE11E6756E30015FF5D /* RideViewModel.swift in Sources */,
-				6ECC0DCC1E673B420015FF5D /* RideViewController.swift in Sources */,
+				6ECC0DDF1E6756E30015FF5D /* RideProgressViewLayout.swift in Sources */,
+				6ECC0DE11E6756E30015FF5D /* RideProgressViewModel.swift in Sources */,
+				6ECC0DCC1E673B420015FF5D /* RideProgressViewController.swift in Sources */,
 				6ECC0DD81E6746FA0015FF5D /* NibLoadable.swift in Sources */,
 				6E62FA3C1E6761240023F87E /* RideRepository.swift in Sources */,
 				6ECC0DD11E673C150015FF5D /* RideCoordinator.swift in Sources */,

@@ -4,12 +4,12 @@ import SnapKit
 
 // MARK: - class
 
-final class RideViewController: UIViewController {
+final class RideProgressViewController: UIViewController {
 
-    fileprivate let rideView = RideViewLayout.loadFromNib()
-    let presenter: RidePresenterType
+    fileprivate let rideView = RideProgressViewLayout.loadFromNib()
+    let presenter: RideProgressPresenterType
     
-    init(presenter: RidePresenterType) {
+    init(presenter: RideProgressPresenterType) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -27,7 +27,7 @@ final class RideViewController: UIViewController {
 
 // MARK: - ui setup
 
-extension RideViewController {
+extension RideProgressViewController {
     
     fileprivate func setupUI() {
         self.addSubviews()
@@ -43,9 +43,9 @@ extension RideViewController {
 
 // MARK: - ride view
 
-extension RideViewController: RideViewType {
+extension RideProgressViewController: RideProgressViewType {
     
-    func show(viewModel: RideViewModel) {
+    func show(viewModel: RideProgressViewModel) {
         self.rideView.show(viewModel: viewModel)
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 import RxSwift
 
-protocol RideRepositoryType {
+protocol RideProgressRepositoryType {
     var rideObservable: Observable<Float> { get }
 }

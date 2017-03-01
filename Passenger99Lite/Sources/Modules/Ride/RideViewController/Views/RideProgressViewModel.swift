@@ -1,7 +1,7 @@
 
 import Foundation
 
-struct RideViewModel: Equatable {
+struct RideProgressViewModel: Equatable {
     
     let progress: Float
     
@@ -10,6 +10,6 @@ struct RideViewModel: Equatable {
     }
 }
 
-func ==(lhs: RideViewModel, rhs: RideViewModel) -> Bool {
+func ==(lhs: RideProgressViewModel, rhs: RideProgressViewModel) -> Bool {
     return lhs.progress == rhs.progress
 }
