@@ -184,8 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				6E62FA5F1E676CF30023F87E /* RideProgressViewLayout.swift */,
-				6E62FA601E676CF30023F87E /* RideProgressViewLayout.xib */,
 				6E62FA611E676CF30023F87E /* RideProgressViewModel.swift */,
+				6E62FA601E676CF30023F87E /* RideProgressViewLayout.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,8 +202,8 @@
 		6E62FA6C1E676D4B0023F87E /* RideCompletionViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FA6D1E676D840023F87E /* RideCompletionViewController.swift */,
 				6E62FA6E1E676D840023F87E /* Views */,
+				6E62FA6D1E676D840023F87E /* RideCompletionViewController.swift */,
 			);
 			path = RideCompletionViewController;
 			sourceTree = "<group>";

@@ -14,8 +14,63 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RideCompletionViewLayout" customModule="Passenger99Lite" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.96470588235294119" green="0.85098039215686272" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="-69" y="60"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Lud-fX-X9L">
+                    <rect key="frame" x="20" y="319" width="335" height="29"/>
+                    <segments>
+                        <segment title="R$ 0,00"/>
+                        <segment title="R$ 2,00"/>
+                        <segment title="R$ 5,00"/>
+                        <segment title="R$ 10,00"/>
+                    </segments>
+                    <color key="tintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="segmentedControlChangeHandler:" destination="iN0-l3-epB" eventType="valueChanged" id="hs1-lc-VWd"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aL5-ko-pwN">
+                    <rect key="frame" x="80" y="142.5" width="214" height="127"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="127" id="Han-ai-iQI"/>
+                        <constraint firstAttribute="width" constant="214" id="mwf-tY-38V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFd-Dz-IAg">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="barTintColor" red="0.0" green="0.63137254899999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Gorjeta" id="Dzi-jS-8hC">
+                            <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Eqj-Xe-gon">
+                                <color key="tintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="dismissButtonHandler:" destination="iN0-l3-epB" id="q42-ti-fCl"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.63137254899999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lud-fX-X9L" firstAttribute="top" secondItem="aL5-ko-pwN" secondAttribute="bottom" constant="49.5" id="5cC-uw-i1d"/>
+                <constraint firstAttribute="trailing" secondItem="gFd-Dz-IAg" secondAttribute="trailing" id="CF7-rT-5ua"/>
+                <constraint firstItem="gFd-Dz-IAg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DUr-ZA-t1U"/>
+                <constraint firstItem="aL5-ko-pwN" firstAttribute="centerX" secondItem="Lud-fX-X9L" secondAttribute="centerX" id="HAH-bd-sak"/>
+                <constraint firstItem="Lud-fX-X9L" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="I7A-Ok-dy7"/>
+                <constraint firstItem="gFd-Dz-IAg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="MBH-6c-zqp"/>
+                <constraint firstItem="Lud-fX-X9L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="OHE-MQ-fjx"/>
+                <constraint firstItem="Lud-fX-X9L" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PbL-FL-vP9"/>
+                <constraint firstAttribute="trailing" secondItem="Lud-fX-X9L" secondAttribute="trailing" constant="20" id="oHZ-fR-GdC"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="83" y="28"/>
         </view>
     </objects>
 </document>

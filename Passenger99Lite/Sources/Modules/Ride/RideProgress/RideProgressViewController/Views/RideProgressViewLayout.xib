@@ -21,8 +21,8 @@
                         <constraint firstAttribute="height" constant="2" id="BTZ-XM-Q9s"/>
                     </constraints>
                 </progressView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu táxi está a caminho!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5q-Ds-m3i">
-                    <rect key="frame" x="80" y="156" width="214" height="127"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finalizando corrida" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5q-Ds-m3i">
+                    <rect key="frame" x="80.5" y="156" width="214" height="127"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="214" id="TaA-BB-0yl"/>
                         <constraint firstAttribute="height" constant="127" id="kZN-38-e2U"/>

@@ -2,12 +2,20 @@
 import UIKit
 import SnapKit
 
+// MARK: - delegate
+
+protocol RideProgressViewControllerDelegate: class {
+    func wantsToShowRideCompletion(rideProgressController: RideProgressViewController)
+}
+
 // MARK: - class
 
 final class RideProgressViewController: UIViewController {
 
     fileprivate let rideView = RideProgressViewLayout.loadFromNib()
-    let presenter: RideProgressPresenterType
+    fileprivate let presenter: RideProgressPresenterType
+    
+    weak var delegate: RideProgressViewControllerDelegate?
     
     init(presenter: RideProgressPresenterType) {
         self.presenter = presenter
@@ -47,5 +55,9 @@ extension RideProgressViewController: RideProgressViewType {
     
     func show(viewModel: RideProgressViewModel) {
         self.rideView.show(viewModel: viewModel)
+    }
+    
+    func didFinishProgress() {
+        self.delegate?.wantsToShowRideCompletion(rideProgressController: self)
     }
 }

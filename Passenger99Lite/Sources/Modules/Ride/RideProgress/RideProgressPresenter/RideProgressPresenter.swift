@@ -3,6 +3,7 @@ import RxSwift
 
 protocol RideProgressViewType: class {
     func show(viewModel: RideProgressViewModel)
+    func didFinishProgress()
 }
 
 class RideProgressPresenter: RideProgressPresenterType {
@@ -33,14 +34,14 @@ extension RideProgressPresenter {
     
     fileprivate func listenToRideUpdates() {
         self.repository.rideObservable
-            .throttle(1, scheduler: MainScheduler.instance)
+//            .throttle(1, scheduler: MainScheduler.instance)
             .observeOn(MainScheduler.instance)
             .subscribe(
                 onNext: { [weak self] (progress) in
                     self?.viewModel = RideProgressViewModel(progress: progress)
                 },
-                onCompleted: {
-                    
+                onCompleted: { [weak self] in
+                    self?.view?.didFinishProgress()
                 })
             .addDisposableTo(self.disposeBag)
     }

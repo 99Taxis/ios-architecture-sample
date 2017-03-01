@@ -2,12 +2,24 @@
 import UIKit
 import SnapKit
 
+// MARK: - delegate
+
+protocol RideCompletionViewControllerDelegate: class {
+    func wantsToDismiss(rideCompletionController: RideCompletionViewController)
+}
+
 // MARK: - class
 
 final class RideCompletionViewController: UIViewController {
 
-    fileprivate let rideView = RideProgressViewLayout.loadFromNib()
     let presenter: RideCompletionPresenterType
+    weak var delegate: RideCompletionViewControllerDelegate?
+    
+    fileprivate lazy var rideView: RideCompletionViewLayout = {
+        let rideView = RideCompletionViewLayout.loadFromNib()
+        rideView.delegate = self
+        return rideView
+    }()
     
     init(presenter: RideCompletionPresenterType) {
         self.presenter = presenter
@@ -41,4 +53,15 @@ extension RideCompletionViewController {
     }
 }
 
-// MARK: - ride view
+// MARK: - ride
+
+extension RideCompletionViewController: RideCompletionViewLayoutDelegate {
+    
+    func wantsToDismiss() {
+        self.delegate?.wantsToDismiss(rideCompletionController: self)
+    }
+    
+    func wantsToChangeTipsAmount(newAmount: Float) {
+        
+    }
+}
