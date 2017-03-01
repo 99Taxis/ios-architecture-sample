@@ -1,23 +1,14 @@
-//
-//  ViewController.swift
-//  Passenger99Lite
-//
-//  Created by Vinicius Rodrigues on 3/1/17.
-//  Copyright © 2017 99. All rights reserved.
-//
 
 import UIKit
 
-class ViewController: UIViewController {
+final class RideViewController: UIViewController {
 
+    let rideView = RideViewLayout.loadFromNib()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.view.addSubview(self.rideView)
+        self.view.backgroundColor = .blue
     }
 }
 
