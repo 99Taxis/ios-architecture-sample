@@ -21,18 +21,30 @@
                         <constraint firstAttribute="height" constant="2" id="BTZ-XM-Q9s"/>
                     </constraints>
                 </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu táxi está a caminho!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5q-Ds-m3i">
+                    <rect key="frame" x="80" y="156" width="214" height="127"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="214" id="TaA-BB-0yl"/>
+                        <constraint firstAttribute="height" constant="127" id="kZN-38-e2U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.85098039215686272" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Uhe-UE-khh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="6Vg-5U-P4N"/>
                 <constraint firstAttribute="trailing" secondItem="Uhe-UE-khh" secondAttribute="trailing" constant="20" id="P52-3h-lxM"/>
+                <constraint firstItem="Uhe-UE-khh" firstAttribute="top" secondItem="j5q-Ds-m3i" secondAttribute="bottom" constant="49.5" id="Qfi-a6-ggg"/>
                 <constraint firstItem="Uhe-UE-khh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oXO-XI-WVI"/>
                 <constraint firstItem="Uhe-UE-khh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uFb-mR-Hnh"/>
+                <constraint firstItem="j5q-Ds-m3i" firstAttribute="centerX" secondItem="Uhe-UE-khh" secondAttribute="centerX" id="xZH-1G-WYM"/>
             </constraints>
             <connections>
                 <outlet property="progressView" destination="Uhe-UE-khh" id="acy-jJ-Zew"/>
             </connections>
-            <point key="canvasLocation" x="42.5" y="49.5"/>
+            <point key="canvasLocation" x="-111.5" y="59.5"/>
         </view>
     </objects>
 </document>

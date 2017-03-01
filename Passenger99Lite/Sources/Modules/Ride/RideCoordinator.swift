@@ -4,7 +4,6 @@ import UIKit
 final class RideCoordinator {
     
     private unowned let window: UIWindow
-    private var navigationController: UINavigationController!
     
     init(window: UIWindow) {
         self.window = window
@@ -16,8 +15,7 @@ final class RideCoordinator {
         let rideViewController = RideViewController(presenter: presenter)
         presenter.view = rideViewController
         
-        self.navigationController = UINavigationController(rootViewController: rideViewController)
-        self.window.rootViewController = self.navigationController
+        self.window.rootViewController = rideViewController
         self.window.makeKeyAndVisible()
     }
 }
