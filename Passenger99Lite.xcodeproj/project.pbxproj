@@ -782,6 +782,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF421977282E658651CB95DE /* Pods-Passenger99Lite.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X36AT7C9SA;
 				INFOPLIST_FILE = "$(SRCROOT)/Passenger99Lite/Resources/Info.plist";
@@ -796,6 +797,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ACA44C32080AC6FEB11B33CC /* Pods-Passenger99Lite.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X36AT7C9SA;
 				INFOPLIST_FILE = "$(SRCROOT)/Passenger99Lite/Resources/Info.plist";
@@ -810,7 +812,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D621A2877B8E803E0C60F7DD /* Pods-Passenger99LiteTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = X36AT7C9SA;
 				INFOPLIST_FILE = Passenger99LiteTests/Info.plist;
@@ -826,7 +828,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73E81B242B979391801BA667 /* Pods-Passenger99LiteTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = X36AT7C9SA;
 				INFOPLIST_FILE = Passenger99LiteTests/Info.plist;
@@ -842,7 +844,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2154A53075522CEC1FBE0EB8 /* Pods-Passenger99LiteUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = X36AT7C9SA;
 				INFOPLIST_FILE = Passenger99LiteUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -857,7 +859,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7DFF7DDF1648609FD184B748 /* Pods-Passenger99LiteUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = X36AT7C9SA;
 				INFOPLIST_FILE = Passenger99LiteUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

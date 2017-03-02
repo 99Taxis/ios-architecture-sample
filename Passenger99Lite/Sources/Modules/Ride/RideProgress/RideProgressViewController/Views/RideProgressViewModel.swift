@@ -11,6 +11,7 @@ struct RideProgressViewModel: Equatable {
     var description: String {
         return self.isFinished ? "Corrida Finalizada!" : "Finalizando Corrida"
     }
+    
     var tipButtonHidden: Bool {
         return !self.isFinished
     }

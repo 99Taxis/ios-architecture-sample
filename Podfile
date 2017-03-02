@@ -10,7 +10,7 @@ target 'Passenger99Lite' do
 
   target 'Passenger99LiteTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Cuckoo'
   end
 
   target 'Passenger99LiteUITests' do
