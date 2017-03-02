@@ -34,6 +34,7 @@
 		6ECC0DCF1E673B650015FF5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DCE1E673B650015FF5D /* AppDelegate.swift */; };
 		6ECC0DD11E673C150015FF5D /* RideCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DD01E673C150015FF5D /* RideCoordinator.swift */; };
 		6ECC0DD81E6746FA0015FF5D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DD71E6746FA0015FF5D /* NibLoadable.swift */; };
+		741374251E68816C006A9085 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741374241E68816C006A9085 /* GeneratedMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		6ECC0DD01E673C150015FF5D /* RideCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCoordinator.swift; sourceTree = "<group>"; };
 		6ECC0DD71E6746FA0015FF5D /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		73E81B242B979391801BA667 /* Pods-Passenger99LiteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger99LiteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passenger99LiteTests/Pods-Passenger99LiteTests.release.xcconfig"; sourceTree = "<group>"; };
+		741374241E68816C006A9085 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		7DFF7DDF1648609FD184B748 /* Pods-Passenger99LiteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger99LiteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passenger99LiteUITests/Pods-Passenger99LiteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ACA44C32080AC6FEB11B33CC /* Pods-Passenger99Lite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger99Lite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passenger99Lite/Pods-Passenger99Lite.release.xcconfig"; sourceTree = "<group>"; };
 		C2A3CEBD4E326DEC1C54A628 /* Pods_Passenger99LiteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passenger99LiteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -255,6 +257,7 @@
 		6ECC0DA01E673A7B0015FF5D /* Passenger99LiteTests */ = {
 			isa = PBXGroup;
 			children = (
+				741374241E68816C006A9085 /* GeneratedMocks.swift */,
 				6ECC0DA11E673A7B0015FF5D /* Passenger99LiteTests.swift */,
 				6ECC0DA31E673A7B0015FF5D /* Info.plist */,
 			);
@@ -356,6 +359,7 @@
 			buildConfigurationList = 6ECC0DB41E673A7B0015FF5D /* Build configuration list for PBXNativeTarget "Passenger99LiteTests" */;
 			buildPhases = (
 				CA59BF5B785F1BB1B78E0051 /* [CP] Check Pods Manifest.lock */,
+				741374231E687F9B006A9085 /* Cuckoo */,
 				6ECC0D991E673A7B0015FF5D /* Sources */,
 				6ECC0D9A1E673A7B0015FF5D /* Frameworks */,
 				6ECC0D9B1E673A7B0015FF5D /* Resources */,
@@ -547,6 +551,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		741374231E687F9B006A9085 /* Cuckoo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Cuckoo;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"$PROJECT_DIR/Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/Passenger99LiteTests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"$PROJECT_DIR\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"$PROJECT_DIR\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n${PODS_ROOT}/Cuckoo/run generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/Passenger99Lite/Sources/Modules/Ride/RideProgress/RideProgressDefinition.swift\" \\\n\"$INPUT_DIR/Passenger99Lite/Sources/Modules/Ride/RideCompletion/RideCompletionDefinition.swift\" \\\n\"$INPUT_DIR/Passenger99Lite/Sources/Protocols/Presenter.swift\"\n# ... and so forth";
+		};
 		7D9DE8B49FEBB849370FD81B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -639,6 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ECC0DA21E673A7B0015FF5D /* Passenger99LiteTests.swift in Sources */,
+				741374251E68816C006A9085 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

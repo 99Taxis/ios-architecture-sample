@@ -1,7 +1,7 @@
 import Foundation
 
 protocol RideProgressPresenterType: Presenter {
-    
+    func viewDidLoad()
 }
 
 protocol RideProgressViewType: class {

@@ -16,7 +16,7 @@ struct RideProgressViewModel: Equatable {
         return !self.isFinished
     }
     
-    init(progress: Float = 0, tipButtonHidden: Bool = true) {
+    init(progress: Float = 0) {
         self.progress = progress
     }
 }
