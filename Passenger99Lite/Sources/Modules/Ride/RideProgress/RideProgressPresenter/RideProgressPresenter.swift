@@ -34,7 +34,6 @@ extension RideProgressPresenter {
     
     fileprivate func listenToRideUpdates() {
         self.repository.rideObservable
-//            .throttle(1, scheduler: MainScheduler.instance)
             .observeOn(MainScheduler.instance)
             .subscribe(
                 onNext: { [weak self] (progress) in

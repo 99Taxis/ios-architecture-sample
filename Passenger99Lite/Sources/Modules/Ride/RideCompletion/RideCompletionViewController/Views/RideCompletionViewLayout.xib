@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,12 +29,8 @@
                     </connections>
                 </segmentedControl>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aL5-ko-pwN">
-                    <rect key="frame" x="80" y="142.5" width="214" height="127"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="127" id="Han-ai-iQI"/>
-                        <constraint firstAttribute="width" constant="214" id="mwf-tY-38V"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <rect key="frame" x="69.5" y="150" width="235.5" height="119.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
                     <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -70,6 +66,10 @@
                 <constraint firstAttribute="trailing" secondItem="Lud-fX-X9L" secondAttribute="trailing" constant="20" id="oHZ-fR-GdC"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="aL5-ko-pwN" id="STG-cQ-jqF"/>
+                <outlet property="segmentedControl" destination="Lud-fX-X9L" id="ZPP-GV-LFD"/>
+            </connections>
             <point key="canvasLocation" x="83" y="28"/>
         </view>
     </objects>

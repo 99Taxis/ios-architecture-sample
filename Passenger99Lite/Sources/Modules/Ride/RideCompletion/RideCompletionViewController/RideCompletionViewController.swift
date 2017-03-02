@@ -15,10 +15,10 @@ final class RideCompletionViewController: UIViewController {
     let presenter: RideCompletionPresenterType
     weak var delegate: RideCompletionViewControllerDelegate?
     
-    fileprivate lazy var rideView: RideCompletionViewLayout = {
-        let rideView = RideCompletionViewLayout.loadFromNib()
-        rideView.delegate = self
-        return rideView
+    fileprivate lazy var rideCompletionView: RideCompletionViewLayout = {
+        let rideCompletionView = RideCompletionViewLayout.loadFromNib()
+        rideCompletionView.delegate = self
+        return rideCompletionView
     }()
     
     init(presenter: RideCompletionPresenterType) {
@@ -35,6 +35,10 @@ final class RideCompletionViewController: UIViewController {
         self.setupUI()
         self.presenter.viewDidLoad()
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
 // MARK: - ui setup
@@ -46,8 +50,8 @@ extension RideCompletionViewController {
     }
     
     private func addSubviews() {
-        self.view.addSubview(self.rideView)
-        self.rideView.snp.makeConstraints { maker in
+        self.view.addSubview(self.rideCompletionView)
+        self.rideCompletionView.snp.makeConstraints { maker in
             maker.edges.equalToSuperview()
         }
     }
@@ -61,14 +65,14 @@ extension RideCompletionViewController: RideCompletionViewLayoutDelegate {
         self.delegate?.wantsToDismiss(rideCompletionController: self)
     }
     
-    func wantsToChangeTipsAmount(newAmount: Float) {
-        
+    func wantsToChangeTipAt(index: Int) {
+        self.presenter.selectedTipAt(index: index)
     }
 }
 
 
 extension RideCompletionViewController: RideCompletionViewType {
     func show(viewModel: RideCompletionViewModel) {
-        <#code#>
+        self.rideCompletionView.show(viewModel: viewModel)
     }
 }
