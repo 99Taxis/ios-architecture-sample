@@ -1,18 +1,37 @@
 PODS:
   - Cuckoo (0.8.3)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Nimble (6.0.1)
+  - Nimble-Snapshots (4.4.0):
+    - Nimble-Snapshots/Core (= 4.4.0)
+  - Nimble-Snapshots/Core (4.4.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble
+    - Quick
+  - Quick (1.1.0)
   - RxSwift (3.1.0)
   - SnapKit (3.1.2)
 
 DEPENDENCIES:
   - Cuckoo
+  - Nimble-Snapshots
+  - Quick
   - RxSwift
   - SnapKit
 
 SPEC CHECKSUMS:
   Cuckoo: 2daf5d23383c0a24cd60b73287a5813af4793add
+  FBSnapshotTestCase: '094f9f314decbabe373b87cc339bea235a63e07a'
+  Nimble: 1527fd1bd2b4cf0636251a36bc8ab37e81da8347
+  Nimble-Snapshots: e743439f26c2fa99d8f7e0d7c01c99bcb40aa6f2
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
   RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
 
-PODFILE CHECKSUM: 7bfaada904775f5fd3dd18c18b5ca5e306ef157b
+PODFILE CHECKSUM: 828a0051db749733dc7ba6d1b3e82907d866ffd7
 
 COCOAPODS: 1.2.0
