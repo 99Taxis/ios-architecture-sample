@@ -38,6 +38,7 @@
 		7413742A1E6885F6006A9085 /* RideCompletionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741374291E6885F6006A9085 /* RideCompletionViewModelTests.swift */; };
 		74576A1C1E68905E00A5D0EB /* RideCompletionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74576A1B1E68905E00A5D0EB /* RideCompletionPresenterTests.swift */; };
 		74576A211E68B36200A5D0EB /* RideProgressViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74576A201E68B36200A5D0EB /* RideProgressViewLayoutTests.swift */; };
+		74576A241E68B3BA00A5D0EB /* RideCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74576A231E68B3BA00A5D0EB /* RideCoordinatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		741374291E6885F6006A9085 /* RideCompletionViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCompletionViewModelTests.swift; sourceTree = "<group>"; };
 		74576A1B1E68905E00A5D0EB /* RideCompletionPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCompletionPresenterTests.swift; sourceTree = "<group>"; };
 		74576A201E68B36200A5D0EB /* RideProgressViewLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideProgressViewLayoutTests.swift; sourceTree = "<group>"; };
+		74576A231E68B3BA00A5D0EB /* RideCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCoordinatorTests.swift; sourceTree = "<group>"; };
 		7DFF7DDF1648609FD184B748 /* Pods-Passenger99LiteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger99LiteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passenger99LiteUITests/Pods-Passenger99LiteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ACA44C32080AC6FEB11B33CC /* Pods-Passenger99Lite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passenger99Lite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passenger99Lite/Pods-Passenger99Lite.release.xcconfig"; sourceTree = "<group>"; };
 		C2A3CEBD4E326DEC1C54A628 /* Pods_Passenger99LiteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passenger99LiteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +265,7 @@
 		6ECC0DA01E673A7B0015FF5D /* Passenger99LiteTests */ = {
 			isa = PBXGroup;
 			children = (
+				74576A221E68B3B000A5D0EB /* RideCoordinatorTests */,
 				741374281E6885D2006A9085 /* RideCompletionTests */,
 				74576A1F1E68B36200A5D0EB /* RideProgressTests */,
 				741374241E68816C006A9085 /* GeneratedMocks.swift */,
@@ -354,6 +357,14 @@
 				74576A201E68B36200A5D0EB /* RideProgressViewLayoutTests.swift */,
 			);
 			path = RideProgressTests;
+			sourceTree = "<group>";
+		};
+		74576A221E68B3B000A5D0EB /* RideCoordinatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				74576A231E68B3BA00A5D0EB /* RideCoordinatorTests.swift */,
+			);
+			path = RideCoordinatorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -685,6 +696,7 @@
 				6ECC0DA21E673A7B0015FF5D /* Passenger99LiteTests.swift in Sources */,
 				74576A211E68B36200A5D0EB /* RideProgressViewLayoutTests.swift in Sources */,
 				74576A1C1E68905E00A5D0EB /* RideCompletionPresenterTests.swift in Sources */,
+				74576A241E68B3BA00A5D0EB /* RideCoordinatorTests.swift in Sources */,
 				741374251E68816C006A9085 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
