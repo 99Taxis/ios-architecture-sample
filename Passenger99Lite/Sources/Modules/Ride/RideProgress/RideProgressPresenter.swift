@@ -32,10 +32,15 @@ extension RideProgressPresenter {
             .observeOn(MainScheduler.instance)
             .subscribe(
                 onNext: { [weak self] (progress) in
-                    self?.viewModel = RideProgressViewModel(progress: progress)
+                    if let weakSelf = self {
+                        weakSelf.viewModel = weakSelf.viewModel.viewModelWith(progress: progress)
+                    }
                 },
                 onCompleted: { [weak self] in
-                    self?.view?.didFinishProgress()
+                    if let weakSelf = self {
+                        weakSelf.view?.didFinishProgress()
+                        weakSelf.view?.show(viewModel: weakSelf.viewModel)
+                    }
                 })
             .addDisposableTo(self.disposeBag)
     }

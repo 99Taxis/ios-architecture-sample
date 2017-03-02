@@ -8,8 +8,9 @@ protocol RideCompletionViewLayoutDelegate: class {
 final class RideCompletionViewLayout: UIView, NibLoadable {
     
     weak var delegate: RideCompletionViewLayoutDelegate?
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet private weak var segmentedControl: UISegmentedControl!
+    @IBOutlet private weak var descriptionLabel: UILabel!
     
     @IBAction func segmentedControlChangeHandler(_ sender: UISegmentedControl) {
         self.delegate?.wantsToChangeTipAt(index: sender.selectedSegmentIndex)

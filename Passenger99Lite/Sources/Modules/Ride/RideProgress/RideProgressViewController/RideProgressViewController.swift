@@ -11,10 +11,14 @@ protocol RideProgressViewControllerDelegate: class {
 
 final class RideProgressViewController: UIViewController {
 
-    fileprivate let rideView = RideProgressViewLayout.loadFromNib()
-    fileprivate let presenter: RideProgressPresenterType
-    
     weak var delegate: RideProgressViewControllerDelegate?
+    
+    fileprivate let presenter: RideProgressPresenterType
+    fileprivate lazy var rideView: RideProgressViewLayout = {
+        let rideView = RideProgressViewLayout.loadFromNib()
+        rideView.delegate = self
+        return rideView
+    }()
     
     init(presenter: RideProgressPresenterType) {
         self.presenter = presenter
@@ -57,6 +61,15 @@ extension RideProgressViewController: RideProgressViewType {
     }
     
     func didFinishProgress() {
+        self.delegate?.wantsToShowRideCompletion(rideProgressController: self)
+    }
+}
+
+// MARK: ride view delegate
+
+extension RideProgressViewController: RideProgressViewLayoutDelegate {
+    
+    func wantsToShowTips() {
         self.delegate?.wantsToShowRideCompletion(rideProgressController: self)
     }
 }

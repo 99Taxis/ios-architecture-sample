@@ -3,13 +3,27 @@ import Foundation
 struct RideProgressViewModel: Equatable {
     
     let progress: Float
-    let tipButtonHidden: Bool
-    let description: String
     
-    init(progress: Float = 0, description: String = "", hiddenTipButton: Bool = true) {
+    fileprivate var isFinished: Bool {
+        return self.progress >= 1
+    }
+    
+    var description: String {
+        return self.isFinished ? "Corrida Finalizada!" : "Finalizando Corrida"
+    }
+    var tipButtonHidden: Bool {
+        return !self.isFinished
+    }
+    
+    init(progress: Float = 0, tipButtonHidden: Bool = true) {
         self.progress = progress
-        self.tipButtonHidden = hiddenTipButton
-        self.description = description
+    }
+}
+
+extension RideProgressViewModel {
+    
+    func viewModelWith(progress: Float) -> RideProgressViewModel {
+        return RideProgressViewModel(progress: progress)
     }
 }
 
