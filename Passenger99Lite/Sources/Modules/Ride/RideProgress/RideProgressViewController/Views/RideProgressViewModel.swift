@@ -1,4 +1,3 @@
-
 import Foundation
 
 struct RideProgressViewModel: Equatable {
@@ -7,7 +6,7 @@ struct RideProgressViewModel: Equatable {
     let tipButtonHidden: Bool
     let description: String
     
-    init(progress: Float, hiddenTipButton: Bool, description: String) {
+    init(progress: Float = 0, description: String = "", hiddenTipButton: Bool = true) {
         self.progress = progress
         self.tipButtonHidden = hiddenTipButton
         self.description = description

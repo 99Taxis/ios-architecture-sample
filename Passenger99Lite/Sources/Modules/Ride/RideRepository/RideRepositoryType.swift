@@ -2,6 +2,6 @@ import Foundation
 import RxSwift
 
 protocol RideRepositoryType {
-    var rideObservable: Observable<Float> { get }
-    func requestTipValues() -> Observable<[Tip]>
+    var rideProgressObservable: Observable<Float> { get }
+    func requestTips() -> Observable<[Tip]>
 }

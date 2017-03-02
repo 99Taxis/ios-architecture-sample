@@ -11,8 +11,6 @@
 		26A8872BBFCC552746248C78 /* Pods_Passenger99LiteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A3CEBD4E326DEC1C54A628 /* Pods_Passenger99LiteUITests.framework */; };
 		55C2844DBEDB556074B2FD9E /* Pods_Passenger99LiteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4135E69B9A4D7A4B8E419604 /* Pods_Passenger99LiteTests.framework */; };
 		6E62FA3F1E67614F0023F87E /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA3E1E67614F0023F87E /* Presenter.swift */; };
-		6E62FA621E676CF30023F87E /* RideProgressPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA571E676CF30023F87E /* RideProgressPresenter.swift */; };
-		6E62FA631E676CF30023F87E /* RideProgressPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA581E676CF30023F87E /* RideProgressPresenterType.swift */; };
 		6E62FA661E676CF30023F87E /* RideProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA5D1E676CF30023F87E /* RideProgressViewController.swift */; };
 		6E62FA671E676CF30023F87E /* RideProgressViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA5F1E676CF30023F87E /* RideProgressViewLayout.swift */; };
 		6E62FA681E676CF30023F87E /* RideProgressViewLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FA601E676CF30023F87E /* RideProgressViewLayout.xib */; };
@@ -23,9 +21,11 @@
 		6E62FA751E676D840023F87E /* RideCompletionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA711E676D840023F87E /* RideCompletionViewModel.swift */; };
 		6E62FA791E676E410023F87E /* RideRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA771E676E410023F87E /* RideRepository.swift */; };
 		6E62FA7A1E676E410023F87E /* RideRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA781E676E410023F87E /* RideRepositoryType.swift */; };
-		6E62FA7C1E676E920023F87E /* RideCompletionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA7B1E676E920023F87E /* RideCompletionPresenter.swift */; };
-		6E62FA7E1E676EA70023F87E /* RideCompletionPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA7D1E676EA70023F87E /* RideCompletionPresenterType.swift */; };
 		6E62FA811E677D520023F87E /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA801E677D520023F87E /* Tip.swift */; };
+		6E62FA831E68771D0023F87E /* RideCompletionDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA821E68771D0023F87E /* RideCompletionDefinition.swift */; };
+		6E62FA851E6877480023F87E /* RideCompletionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA841E6877480023F87E /* RideCompletionPresenter.swift */; };
+		6E62FA871E6877620023F87E /* RideProgressDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA861E6877620023F87E /* RideProgressDefinition.swift */; };
+		6E62FA891E6877810023F87E /* RideProgressPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FA881E6877810023F87E /* RideProgressPresenter.swift */; };
 		6ECC0DA21E673A7B0015FF5D /* Passenger99LiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DA11E673A7B0015FF5D /* Passenger99LiteTests.swift */; };
 		6ECC0DAD1E673A7B0015FF5D /* Passenger99LiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DAC1E673A7B0015FF5D /* Passenger99LiteUITests.swift */; };
 		6ECC0DC71E673B420015FF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC0DBB1E673B420015FF5D /* Assets.xcassets */; };
@@ -58,8 +58,6 @@
 		36C060F2291D55EB5BC18D7A /* Pods_Passenger99Lite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passenger99Lite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4135E69B9A4D7A4B8E419604 /* Pods_Passenger99LiteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passenger99LiteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E62FA3E1E67614F0023F87E /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		6E62FA571E676CF30023F87E /* RideProgressPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideProgressPresenter.swift; sourceTree = "<group>"; };
-		6E62FA581E676CF30023F87E /* RideProgressPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideProgressPresenterType.swift; sourceTree = "<group>"; };
 		6E62FA5D1E676CF30023F87E /* RideProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideProgressViewController.swift; sourceTree = "<group>"; };
 		6E62FA5F1E676CF30023F87E /* RideProgressViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideProgressViewLayout.swift; sourceTree = "<group>"; };
 		6E62FA601E676CF30023F87E /* RideProgressViewLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RideProgressViewLayout.xib; sourceTree = "<group>"; };
@@ -70,9 +68,11 @@
 		6E62FA711E676D840023F87E /* RideCompletionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCompletionViewModel.swift; sourceTree = "<group>"; };
 		6E62FA771E676E410023F87E /* RideRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideRepository.swift; sourceTree = "<group>"; };
 		6E62FA781E676E410023F87E /* RideRepositoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideRepositoryType.swift; sourceTree = "<group>"; };
-		6E62FA7B1E676E920023F87E /* RideCompletionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCompletionPresenter.swift; sourceTree = "<group>"; };
-		6E62FA7D1E676EA70023F87E /* RideCompletionPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCompletionPresenterType.swift; sourceTree = "<group>"; };
 		6E62FA801E677D520023F87E /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		6E62FA821E68771D0023F87E /* RideCompletionDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCompletionDefinition.swift; sourceTree = "<group>"; };
+		6E62FA841E6877480023F87E /* RideCompletionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCompletionPresenter.swift; sourceTree = "<group>"; };
+		6E62FA861E6877620023F87E /* RideProgressDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideProgressDefinition.swift; sourceTree = "<group>"; };
+		6E62FA881E6877810023F87E /* RideProgressPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideProgressPresenter.swift; sourceTree = "<group>"; };
 		6ECC0D891E673A7B0015FF5D /* Passenger99Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passenger99Lite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECC0D9D1E673A7B0015FF5D /* Passenger99LiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Passenger99LiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECC0DA11E673A7B0015FF5D /* Passenger99LiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger99LiteTests.swift; sourceTree = "<group>"; };
@@ -149,7 +149,8 @@
 		6E62FA541E676CF30023F87E /* RideCompletion */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FA6A1E676D4B0023F87E /* RideCompletionPresenter */,
+				6E62FA821E68771D0023F87E /* RideCompletionDefinition.swift */,
+				6E62FA841E6877480023F87E /* RideCompletionPresenter.swift */,
 				6E62FA6C1E676D4B0023F87E /* RideCompletionViewController */,
 			);
 			path = RideCompletion;
@@ -158,26 +159,18 @@
 		6E62FA551E676CF30023F87E /* RideProgress */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FA561E676CF30023F87E /* RideProgressPresenter */,
+				6E62FA861E6877620023F87E /* RideProgressDefinition.swift */,
+				6E62FA881E6877810023F87E /* RideProgressPresenter.swift */,
 				6E62FA5C1E676CF30023F87E /* RideProgressViewController */,
 			);
 			path = RideProgress;
 			sourceTree = "<group>";
 		};
-		6E62FA561E676CF30023F87E /* RideProgressPresenter */ = {
-			isa = PBXGroup;
-			children = (
-				6E62FA571E676CF30023F87E /* RideProgressPresenter.swift */,
-				6E62FA581E676CF30023F87E /* RideProgressPresenterType.swift */,
-			);
-			path = RideProgressPresenter;
-			sourceTree = "<group>";
-		};
 		6E62FA5C1E676CF30023F87E /* RideProgressViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FA5D1E676CF30023F87E /* RideProgressViewController.swift */,
 				6E62FA5E1E676CF30023F87E /* Views */,
+				6E62FA5D1E676CF30023F87E /* RideProgressViewController.swift */,
 			);
 			path = RideProgressViewController;
 			sourceTree = "<group>";
@@ -190,15 +183,6 @@
 				6E62FA601E676CF30023F87E /* RideProgressViewLayout.xib */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		6E62FA6A1E676D4B0023F87E /* RideCompletionPresenter */ = {
-			isa = PBXGroup;
-			children = (
-				6E62FA7D1E676EA70023F87E /* RideCompletionPresenterType.swift */,
-				6E62FA7B1E676E920023F87E /* RideCompletionPresenter.swift */,
-			);
-			path = RideCompletionPresenter;
 			sourceTree = "<group>";
 		};
 		6E62FA6C1E676D4B0023F87E /* RideCompletionViewController */ = {
@@ -630,9 +614,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E62FA631E676CF30023F87E /* RideProgressPresenterType.swift in Sources */,
-				6E62FA7C1E676E920023F87E /* RideCompletionPresenter.swift in Sources */,
-				6E62FA621E676CF30023F87E /* RideProgressPresenter.swift in Sources */,
 				6ECC0DCF1E673B650015FF5D /* AppDelegate.swift in Sources */,
 				6E62FA791E676E410023F87E /* RideRepository.swift in Sources */,
 				6E62FA3F1E67614F0023F87E /* Presenter.swift in Sources */,
@@ -641,11 +622,14 @@
 				6ECC0DD81E6746FA0015FF5D /* NibLoadable.swift in Sources */,
 				6E62FA751E676D840023F87E /* RideCompletionViewModel.swift in Sources */,
 				6E62FA691E676CF30023F87E /* RideProgressViewModel.swift in Sources */,
+				6E62FA851E6877480023F87E /* RideCompletionPresenter.swift in Sources */,
 				6E62FA671E676CF30023F87E /* RideProgressViewLayout.swift in Sources */,
 				6E62FA811E677D520023F87E /* Tip.swift in Sources */,
-				6E62FA7E1E676EA70023F87E /* RideCompletionPresenterType.swift in Sources */,
+				6E62FA891E6877810023F87E /* RideProgressPresenter.swift in Sources */,
+				6E62FA871E6877620023F87E /* RideProgressDefinition.swift in Sources */,
 				6E62FA661E676CF30023F87E /* RideProgressViewController.swift in Sources */,
 				6ECC0DD11E673C150015FF5D /* RideCoordinator.swift in Sources */,
+				6E62FA831E68771D0023F87E /* RideCompletionDefinition.swift in Sources */,
 				6E62FA731E676D840023F87E /* RideCompletionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,4 +1,3 @@
-
 import UIKit
 
 final class RideCoordinator {
@@ -26,8 +25,8 @@ extension RideCoordinator: RideProgressViewControllerDelegate {
         let repository = RideRepository()
         let presenter = RideCompletionPresenter(repository: repository)
         let rideCompletionViewController = RideCompletionViewController(presenter: presenter)
-        presenter.view = rideCompletionViewController
         rideCompletionViewController.delegate = self
+        presenter.view = rideCompletionViewController
         rideProgressController.present(rideCompletionViewController, animated: true, completion: nil)
     }
 }

@@ -1,16 +1,11 @@
 import Foundation
 import RxSwift
 
-
-protocol RideCompletionViewType: class {
-    func show(viewModel: RideCompletionViewModel)
-}
-
-
-class RideCompletionPresenter: RideCompletionPresenterType {
+final class RideCompletionPresenter: RideCompletionPresenterType {
+    
+    weak var view: RideCompletionViewType?
     
     fileprivate let repository: RideRepositoryType
-    weak var view: RideCompletionViewType?
     fileprivate let disposeBag = DisposeBag()
     fileprivate var viewModel: RideCompletionViewModel? {
         didSet{
@@ -24,10 +19,12 @@ class RideCompletionPresenter: RideCompletionPresenterType {
     }
     
     func viewDidLoad() {
-        self.repository.requestTipValues()
-            .subscribe(onNext: { tips in
-                self.viewModel = RideCompletionViewModel(tips: tips, selectedIndex: 0)
-        }).addDisposableTo(disposeBag)
+        self.repository.requestTips()
+            .subscribe(
+                onNext: { tips in
+                    self.viewModel = RideCompletionViewModel(tips: tips, selectedIndex: 0)
+                })
+            .addDisposableTo(disposeBag)
     }
     
     func selectedTipAt(index: Int) {

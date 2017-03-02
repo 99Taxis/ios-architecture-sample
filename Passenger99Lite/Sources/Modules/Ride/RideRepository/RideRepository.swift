@@ -1,9 +1,9 @@
 import Foundation
 import RxSwift
 
-class RideRepository: RideRepositoryType {
+final class RideRepository: RideRepositoryType {
     
-    lazy var rideObservable: Observable<Float> = {
+    lazy var rideProgressObservable: Observable<Float> = {
         return Observable<Float>.create { observer in
             let interval: TimeInterval = 0.4
             let timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
@@ -33,7 +33,7 @@ class RideRepository: RideRepositoryType {
         }
     }()
     
-    func requestTipValues() -> Observable<[Tip]> {
+    func requestTips() -> Observable<[Tip]> {
         let tips = [
             Tip(value: 0.0, description: "😡"),
             Tip(value: 2.0, description: "🙂"),

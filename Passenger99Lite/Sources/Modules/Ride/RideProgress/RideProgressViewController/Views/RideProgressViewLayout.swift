@@ -1,4 +1,3 @@
-
 import UIKit
 
 final class RideProgressViewLayout: UIView, NibLoadable {
