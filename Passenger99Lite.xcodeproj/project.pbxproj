@@ -30,7 +30,6 @@
 		6ECC0DAD1E673A7B0015FF5D /* Passenger99LiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DAC1E673A7B0015FF5D /* Passenger99LiteUITests.swift */; };
 		6ECC0DC71E673B420015FF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC0DBB1E673B420015FF5D /* Assets.xcassets */; };
 		6ECC0DC81E673B420015FF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC0DBC1E673B420015FF5D /* LaunchScreen.storyboard */; };
-		6ECC0DC91E673B420015FF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ECC0DBE1E673B420015FF5D /* Main.storyboard */; };
 		6ECC0DCF1E673B650015FF5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DCE1E673B650015FF5D /* AppDelegate.swift */; };
 		6ECC0DD11E673C150015FF5D /* RideCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DD01E673C150015FF5D /* RideCoordinator.swift */; };
 		6ECC0DD81E6746FA0015FF5D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC0DD71E6746FA0015FF5D /* NibLoadable.swift */; };
@@ -87,7 +86,6 @@
 		6ECC0DAE1E673A7B0015FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ECC0DBB1E673B420015FF5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ECC0DBD1E673B420015FF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6ECC0DBF1E673B420015FF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6ECC0DC01E673B420015FF5D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ECC0DCE1E673B650015FF5D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ECC0DD01E673C150015FF5D /* RideCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCoordinator.swift; sourceTree = "<group>"; };
@@ -289,7 +287,6 @@
 			children = (
 				6ECC0DBB1E673B420015FF5D /* Assets.xcassets */,
 				6ECC0DBC1E673B420015FF5D /* LaunchScreen.storyboard */,
-				6ECC0DBE1E673B420015FF5D /* Main.storyboard */,
 				6ECC0DC01E673B420015FF5D /* Info.plist */,
 			);
 			path = Resources;
@@ -487,7 +484,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ECC0DC91E673B420015FF5D /* Main.storyboard in Resources */,
 				6E62FA681E676CF30023F87E /* RideProgressViewLayout.xib in Resources */,
 				6E62FA741E676D840023F87E /* RideCompletionViewLayout.xib in Resources */,
 				6ECC0DC71E673B420015FF5D /* Assets.xcassets in Resources */,
@@ -731,14 +727,6 @@
 				6ECC0DBD1E673B420015FF5D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		6ECC0DBE1E673B420015FF5D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6ECC0DBF1E673B420015FF5D /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

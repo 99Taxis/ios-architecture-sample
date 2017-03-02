@@ -17,8 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let window = UIWindow()
-        self.rootCoordinator = RideCoordinator(window: window)
-        self.rootCoordinator?.start()
+        let rootCoordinator = RideCoordinator(window: window)
+        self.rootCoordinator = rootCoordinator
+        
+        rootCoordinator.start()
+        
         self.window = window
         return true
     }
