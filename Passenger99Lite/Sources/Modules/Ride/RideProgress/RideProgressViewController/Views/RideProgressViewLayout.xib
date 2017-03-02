@@ -27,18 +27,29 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3f-Hc-X7T">
+                    <rect key="frame" x="162.5" y="369.5" width="51" height="30"/>
+                    <state key="normal" title="Gorjeta"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.96470588235294119" green="0.85098039215686272" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Uhe-UE-khh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="6Vg-5U-P4N"/>
                 <constraint firstAttribute="trailing" secondItem="Uhe-UE-khh" secondAttribute="trailing" constant="20" id="P52-3h-lxM"/>
                 <constraint firstItem="Uhe-UE-khh" firstAttribute="top" secondItem="j5q-Ds-m3i" secondAttribute="bottom" constant="49.5" id="Qfi-a6-ggg"/>
+                <constraint firstItem="z3f-Hc-X7T" firstAttribute="top" secondItem="Uhe-UE-khh" secondAttribute="bottom" constant="35" id="nrZ-Jg-Csq"/>
                 <constraint firstItem="Uhe-UE-khh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oXO-XI-WVI"/>
+                <constraint firstItem="z3f-Hc-X7T" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="u3S-JH-10r"/>
                 <constraint firstItem="Uhe-UE-khh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uFb-mR-Hnh"/>
                 <constraint firstItem="j5q-Ds-m3i" firstAttribute="centerX" secondItem="Uhe-UE-khh" secondAttribute="centerX" id="xZH-1G-WYM"/>
             </constraints>
             <connections>
+                <outlet property="label" destination="j5q-Ds-m3i" id="cLo-tp-EhX"/>
                 <outlet property="progressView" destination="Uhe-UE-khh" id="acy-jJ-Zew"/>
+                <outlet property="tipButton" destination="z3f-Hc-X7T" id="psp-7v-bTf"/>
             </connections>
             <point key="canvasLocation" x="-111.5" y="59.5"/>
         </view>
