@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Passenger99Lite/Sources/Modules/Ride/RideCompletion/RideCompletionDefinition.swift at 2017-03-02 16:44:18 +0000
+// MARK: - Mocks generated from file: Passenger99Lite/Sources/Modules/Ride/RideCompletion/RideCompletionDefinition.swift at 2017-03-02 17:39:00 +0000
 
 
 import Cuckoo
@@ -135,7 +135,7 @@ class RideCompletionViewTypeStub: RideCompletionViewType {
     }
 }
 
-// MARK: - Mocks generated from file: Passenger99Lite/Sources/Modules/Ride/RideProgress/RideProgressDefinition.swift at 2017-03-02 16:44:18 +0000
+// MARK: - Mocks generated from file: Passenger99Lite/Sources/Modules/Ride/RideProgress/RideProgressDefinition.swift at 2017-03-02 17:39:00 +0000
 
 
 import Cuckoo
@@ -270,7 +270,7 @@ class RideProgressViewTypeStub: RideProgressViewType {
     }
 }
 
-// MARK: - Mocks generated from file: Passenger99Lite/Sources/Protocols/Presenter.swift at 2017-03-02 16:44:18 +0000
+// MARK: - Mocks generated from file: Passenger99Lite/Sources/Protocols/Presenter.swift at 2017-03-02 17:39:00 +0000
 
 
 import Cuckoo

@@ -9,7 +9,14 @@
 import Foundation
 
 
-struct Tip {
+struct Tip : Equatable{
     let value: Float
     let description: String
+}
+
+
+func ==(lhs: Tip, rhs: Tip) -> Bool{
+    let equalValue = lhs.value == rhs.value
+    let equalDescription = lhs.description == rhs.description
+    return equalValue && equalDescription
 }

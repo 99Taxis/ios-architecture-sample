@@ -3,7 +3,7 @@ import Foundation
 
 struct RideCompletionViewModel: Equatable {
     fileprivate let tips: [Tip]
-    fileprivate let selectedIndex: Int
+    let selectedIndex: Int
     var count: Int {
         return tips.count
     }
@@ -24,13 +24,14 @@ struct RideCompletionViewModel: Equatable {
     }
 }
 
-func ==(lhs: RideCompletionViewModel, rhs: RideCompletionViewModel) -> Bool {
-    return true
-}
-
-
 extension RideCompletionViewModel {
     func viewModelWith(selectedIndex: Int) -> RideCompletionViewModel{
         return RideCompletionViewModel(tips: self.tips, selectedIndex: selectedIndex)
     }
+}
+
+func ==(lhs: RideCompletionViewModel, rhs: RideCompletionViewModel) -> Bool {
+    let equalSelectedIndex = lhs.selectedIndex == rhs.selectedIndex
+    let equalTip = lhs.tips == rhs.tips
+    return equalSelectedIndex && equalTip
 }
