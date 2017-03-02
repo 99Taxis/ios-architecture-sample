@@ -13,7 +13,7 @@ class RideProgressViewLayoutTests: QuickSpec {
             beforeEach {
                 viewLayout = RideProgressViewLayout.loadFromNib()
             }
-            it("has unfinesh progress") {
+            it("has unfinished progress") {
                 let viewModel = RideProgressViewModel(progress: 0.4)
                 viewLayout.show(viewModel: viewModel)
                 expect(viewLayout).to(haveValidSnapshot())
