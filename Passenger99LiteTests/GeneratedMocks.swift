@@ -1,4 +1,66 @@
-// MARK: - Mocks generated from file: Passenger99Lite/Sources/Modules/Ride/RideCompletion/RideCompletionDefinition.swift at 2017-03-02 17:39:00 +0000
+// MARK: - Mocks generated from file: Passenger99Lite/Sources/Protocols/Presenter.swift at 2017-03-02 19:43:45 +0000
+
+
+import Cuckoo
+@testable import Passenger99Lite
+
+import Foundation
+
+class MockPresenter: Presenter, Cuckoo.Mock {
+    typealias MocksType = Presenter
+    typealias Stubbing = __StubbingProxy_Presenter
+    typealias Verification = __VerificationProxy_Presenter
+    let manager = Cuckoo.MockManager()
+    
+    private var observed: Presenter?
+    
+    func spy(on victim: Presenter) -> Self {
+        observed = victim
+        return self
+    }
+    
+    func viewDidLoad() {
+        return manager.call("viewDidLoad()", parameters: (), original: observed.map { o in return { () in o.viewDidLoad() } })
+    }
+    
+    struct __StubbingProxy_Presenter: Cuckoo.StubbingProxy {
+        private let manager: Cuckoo.MockManager
+        
+        init(manager: Cuckoo.MockManager) {
+            self.manager = manager
+        }
+        
+        func viewDidLoad() -> Cuckoo.StubNoReturnFunction<()> {
+            return Cuckoo.StubNoReturnFunction(stub: manager.createStub("viewDidLoad()", parameterMatchers: []))
+        }
+    }
+    
+    struct __VerificationProxy_Presenter: Cuckoo.VerificationProxy {
+        private let manager: Cuckoo.MockManager
+        private let callMatcher: Cuckoo.CallMatcher
+        private let sourceLocation: Cuckoo.SourceLocation
+        
+        init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+            self.manager = manager
+            self.callMatcher = callMatcher
+            self.sourceLocation = sourceLocation
+        }
+        
+        @discardableResult
+        func viewDidLoad() -> Cuckoo.__DoNotUse<Void> {
+            return manager.verify("viewDidLoad()", callMatcher: callMatcher, parameterMatchers: [] as [Cuckoo.ParameterMatcher<Void>], sourceLocation: sourceLocation)
+        }
+    }
+}
+
+class PresenterStub: Presenter {
+    
+    func viewDidLoad() {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+}
+
+// MARK: - Mocks generated from file: Passenger99Lite/Sources/Modules/Ride/RideCompletion/RideCompletionDefinition.swift at 2017-03-02 19:43:45 +0000
 
 
 import Cuckoo
@@ -135,7 +197,90 @@ class RideCompletionViewTypeStub: RideCompletionViewType {
     }
 }
 
-// MARK: - Mocks generated from file: Passenger99Lite/Sources/Modules/Ride/RideProgress/RideProgressDefinition.swift at 2017-03-02 17:39:00 +0000
+// MARK: - Mocks generated from file: Passenger99Lite/Sources/Modules/Ride/RideRepository/RideRepositoryType.swift at 2017-03-02 19:43:45 +0000
+
+
+import Cuckoo
+@testable import Passenger99Lite
+
+import Foundation
+import RxSwift
+
+class MockRideRepositoryType: RideRepositoryType, Cuckoo.Mock {
+    typealias MocksType = RideRepositoryType
+    typealias Stubbing = __StubbingProxy_RideRepositoryType
+    typealias Verification = __VerificationProxy_RideRepositoryType
+    let manager = Cuckoo.MockManager()
+    
+    private var observed: RideRepositoryType?
+    
+    func spy(on victim: RideRepositoryType) -> Self {
+        observed = victim
+        return self
+    }
+    
+    var rideProgressObservable: Observable<Float> {
+        get {
+            return manager.getter("rideProgressObservable", original: observed.map { o in return { () -> Observable<Float> in o.rideProgressObservable } })
+        }
+    }
+    
+    func requestTips() -> Observable<[Tip]> {
+        return manager.call("requestTips() -> Observable<[Tip]>", parameters: (), original: observed.map { o in return { () -> Observable<[Tip]> in o.requestTips() } })
+    }
+    
+    struct __StubbingProxy_RideRepositoryType: Cuckoo.StubbingProxy {
+        private let manager: Cuckoo.MockManager
+        
+        init(manager: Cuckoo.MockManager) {
+            self.manager = manager
+        }
+        
+        var rideProgressObservable: Cuckoo.ToBeStubbedReadOnlyProperty<Observable<Float>> {
+            return Cuckoo.ToBeStubbedReadOnlyProperty(manager: manager, name: "rideProgressObservable")
+        }
+        
+        func requestTips() -> Cuckoo.StubFunction<(), Observable<[Tip]>> {
+            return Cuckoo.StubFunction(stub: manager.createStub("requestTips() -> Observable<[Tip]>", parameterMatchers: []))
+        }
+    }
+    
+    struct __VerificationProxy_RideRepositoryType: Cuckoo.VerificationProxy {
+        private let manager: Cuckoo.MockManager
+        private let callMatcher: Cuckoo.CallMatcher
+        private let sourceLocation: Cuckoo.SourceLocation
+        
+        init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+            self.manager = manager
+            self.callMatcher = callMatcher
+            self.sourceLocation = sourceLocation
+        }
+        
+        var rideProgressObservable: Cuckoo.VerifyReadOnlyProperty<Observable<Float>> {
+            return Cuckoo.VerifyReadOnlyProperty(manager: manager, name: "rideProgressObservable", callMatcher: callMatcher, sourceLocation: sourceLocation)
+        }
+        
+        @discardableResult
+        func requestTips() -> Cuckoo.__DoNotUse<Observable<[Tip]>> {
+            return manager.verify("requestTips() -> Observable<[Tip]>", callMatcher: callMatcher, parameterMatchers: [] as [Cuckoo.ParameterMatcher<Void>], sourceLocation: sourceLocation)
+        }
+    }
+}
+
+class RideRepositoryTypeStub: RideRepositoryType {
+    
+    var rideProgressObservable: Observable<Float> {
+        get {
+            return DefaultValueRegistry.defaultValue(for: (Observable<Float>).self)
+        }
+    }
+    
+    func requestTips() -> Observable<[Tip]> {
+        return DefaultValueRegistry.defaultValue(for: (Observable<[Tip]>).self)
+    }
+}
+
+// MARK: - Mocks generated from file: Passenger99Lite/Sources/Modules/Ride/RideProgress/RideProgressDefinition.swift at 2017-03-02 19:43:45 +0000
 
 
 import Cuckoo
@@ -266,68 +411,6 @@ class RideProgressViewTypeStub: RideProgressViewType {
     }
     
     func didFinishProgress() {
-        return DefaultValueRegistry.defaultValue(for: (Void).self)
-    }
-}
-
-// MARK: - Mocks generated from file: Passenger99Lite/Sources/Protocols/Presenter.swift at 2017-03-02 17:39:00 +0000
-
-
-import Cuckoo
-@testable import Passenger99Lite
-
-import Foundation
-
-class MockPresenter: Presenter, Cuckoo.Mock {
-    typealias MocksType = Presenter
-    typealias Stubbing = __StubbingProxy_Presenter
-    typealias Verification = __VerificationProxy_Presenter
-    let manager = Cuckoo.MockManager()
-    
-    private var observed: Presenter?
-    
-    func spy(on victim: Presenter) -> Self {
-        observed = victim
-        return self
-    }
-    
-    func viewDidLoad() {
-        return manager.call("viewDidLoad()", parameters: (), original: observed.map { o in return { () in o.viewDidLoad() } })
-    }
-    
-    struct __StubbingProxy_Presenter: Cuckoo.StubbingProxy {
-        private let manager: Cuckoo.MockManager
-        
-        init(manager: Cuckoo.MockManager) {
-            self.manager = manager
-        }
-        
-        func viewDidLoad() -> Cuckoo.StubNoReturnFunction<()> {
-            return Cuckoo.StubNoReturnFunction(stub: manager.createStub("viewDidLoad()", parameterMatchers: []))
-        }
-    }
-    
-    struct __VerificationProxy_Presenter: Cuckoo.VerificationProxy {
-        private let manager: Cuckoo.MockManager
-        private let callMatcher: Cuckoo.CallMatcher
-        private let sourceLocation: Cuckoo.SourceLocation
-        
-        init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
-            self.manager = manager
-            self.callMatcher = callMatcher
-            self.sourceLocation = sourceLocation
-        }
-        
-        @discardableResult
-        func viewDidLoad() -> Cuckoo.__DoNotUse<Void> {
-            return manager.verify("viewDidLoad()", callMatcher: callMatcher, parameterMatchers: [] as [Cuckoo.ParameterMatcher<Void>], sourceLocation: sourceLocation)
-        }
-    }
-}
-
-class PresenterStub: Presenter {
-    
-    func viewDidLoad() {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
 }

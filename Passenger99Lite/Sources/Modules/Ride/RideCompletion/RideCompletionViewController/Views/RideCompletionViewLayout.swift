@@ -21,10 +21,14 @@ final class RideCompletionViewLayout: UIView, NibLoadable {
     }
     
     func show(viewModel: RideCompletionViewModel) {
+        self.setupSeguimentdControl(viewModel: viewModel)
+        self.descriptionLabel.text = viewModel.description
+    }
+    
+    private func setupSeguimentdControl(viewModel: RideCompletionViewModel){
         for index in 0..<viewModel.count {
             let title = viewModel.getTipValueAt(index: index)
             self.segmentedControl.setTitle(title, forSegmentAt: index)
-        }   
-        self.descriptionLabel.text = viewModel.description
+        }
     }
 }
